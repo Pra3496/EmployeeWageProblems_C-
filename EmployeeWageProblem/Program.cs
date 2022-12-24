@@ -17,8 +17,8 @@ namespace EmployeeWageProblem
                         Console.WriteLine("***********|  WEL-COME TO EMPLOYEE WAGE  Application  |***********");
                         Console.WriteLine("******************************************************************");
                         Console.WriteLine("*********************  OPTIONS ARE FOLLOWING  ********************\n");
-                        Console.WriteLine("Enter 1 for UC1\nEnter 2 for UC2\nEnter 3 for UC3\nEnter 4 for UC4\nEnter 5 for UC5\nEnter 6 for UC6");
-                        Console.WriteLine("\n*************************|  END OF OPTIONS  |*********************");
+                        Console.WriteLine("Enter 1 for Employee Attendance\nEnter 2 for Calculating Employee Wage\nEnter 3 for Calculating Employee Wage with Part-Time\nEnter 4 for Calculating Employee Wage Using Switch Case\nEnter 5 for Calculating Employee Wage for Month\nEnter 6 for Calculating Employee Wage for Month Max Days");
+                        Console.WriteLine("\n***********************|  END OF OPTIONS  |*********************");
                         Console.Write("Enter the Option : ");
                         int option = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine();
@@ -83,12 +83,14 @@ namespace EmployeeWageProblem
                                 Console.WriteLine("\nEnter Y to Continue OR N to Exit the Application\n");
                                 Console.Write("(Y/N)=>\t");
                                 cnt = Console.ReadLine()[0];
+                                Console.WriteLine("\n");
                                 if(('Y'.Equals(cnt)) || ('y'.Equals(cnt)))
                                 {
                                     continue;
                                 }
                                 else if(('n'.Equals(cnt)) || ('N'.Equals(cnt)))
                                 {
+                                    Console.WriteLine("************>| THANK YOU for using this application |<**********");
                                     break;
                                 }
                                 else
