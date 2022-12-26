@@ -8,7 +8,13 @@ namespace EmployeeWageProblem
 {
     internal class EmployWageUC2
     {
-        public void EmployeeUC2(int empCheck1)
+        int empCheck;
+
+        public EmployWageUC2(int empChk)
+        {
+            this.empCheck = empChk;
+        }
+        public void EmployeeUC2()
         {
             int IS_PRESENT = 1;
             int EMP_RATE_PER_HOUR = 20;
@@ -16,7 +22,7 @@ namespace EmployeeWageProblem
             int empHrs = 0;
             int empWages = 0;
 
-            if (empCheck1 == IS_PRESENT)
+            if (this.empCheck == IS_PRESENT)
             {
                 empHrs = 8;
             }

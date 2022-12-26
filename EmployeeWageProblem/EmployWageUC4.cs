@@ -6,18 +6,23 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageProblem
 {
+
     internal class EmployWageUC4
     {
 
-        public const int IS_PARTTIME = 1;
-        public const int IS_FULLTIME = 2;
-        public const int EMP_RATE_PER_HRS = 20;
-        public void EmployeeUC4(int empCheck3)
+        const int IS_PARTTIME = 1;
+        const int IS_FULLTIME = 2;
+        const int EMP_RATE_PER_HRS = 20;
+
+        
+
+       
+        public void EmployeeUC4(int empCheck)
         {
             int empHrs = 0;
             int empWages = 0;
 
-            switch (empCheck3)
+            switch (empCheck)
             {
                 case IS_PARTTIME:
                     empHrs = 4;

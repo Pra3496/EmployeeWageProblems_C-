@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageProblem
 {
-    internal class EmployWageUC1
+    public class EmployWageUC1
     {
-        public void EmployeeUC1(int empCheck)
+        int empCheck;
+
+        public EmployWageUC1(int empChk)
+        {
+            this.empCheck = empChk;
+        }
+
+        public void EmployeeUC1()
         {
             int IS_PRESENT = 1;
-            if (empCheck == IS_PRESENT)
+            if (this.empCheck == IS_PRESENT)
             {
                 Console.WriteLine("Employee is present");
             }
